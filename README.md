@@ -1,4 +1,5 @@
 # AlgorithmStudy
-알고리즘 스터디한 코드
 
-Basic lasts FOREVER! 
+Basics Last Forever!!
+
+## [Sorting 정렬](https://github.com/allwhite423/Algorithm/tree/master/Sorting)

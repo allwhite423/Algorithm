@@ -1,4 +1,6 @@
-﻿## Selection Sort
+# Sorting
+
+## Selection Sort
 자리를 선택한다
 1. 자리를 선택한다
 2. 정렬안된 list element 중 min/max 를 찾는다
@@ -10,7 +12,7 @@
 - ***j*** : min/max를 찾을 대상 list 
 	- ***i ~ n-1*** (자기 자신 포함 해야 함!!)
 
-<hidden 연습코드>
+
 ```c++
 #include <iostream>
 using namespace std;
@@ -67,7 +69,6 @@ int main() {
     
 }
 ```
-</ hidden>
 
 ## Insertion Sort
 앞쪽에 정렬된 list에 요소를 삽입(Insert)하는 정렬 방법

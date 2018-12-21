@@ -2,6 +2,9 @@
 
 ## Selection Sort 
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)
+
+<br>
+
 자리를 선택한다
 1. 자리를 선택한다
 2. 정렬안된 list element 중 min/max 를 찾는다
@@ -73,7 +76,9 @@ int main() {
 
 ## Insertion Sort
 [C++1](https://github.com/allwhite423/Algorithm/blob/master/Sorting/insertionSort.cpp)
+
 [C++2](https://github.com/allwhite423/Algorithm/blob/master/Sorting/insertionSort_ver2.cpp)
+
 
 앞쪽에 정렬된 list에 요소를 삽입(Insert)하는 정렬 방법
 자리를 찾아가는 과정
@@ -100,6 +105,9 @@ void InsertionSort::execute() {
 
 ## Bubble Sort
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/bubbleSort.cpp)
+
+<br>
+
 인접한 두개 요소를 계속해서 비교하여 정렬
 뒤쪽에서부터 정렬됨
 

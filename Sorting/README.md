@@ -1,4 +1,7 @@
 # Sorting
+- [Selection Sort](#selection-sort)
+- [Insertion Sort](#insertion-sort)
+- [Bubble Sort](#bubble-sort)
 
 ## Selection Sort 
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)

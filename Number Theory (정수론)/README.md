@@ -1,6 +1,6 @@
-﻿## Number Theory 정수론
-- [Euclidean algorithm 유클리드호제법]()
-- [소수 관련 알고리즘]()
+## Number Theory 정수론
+- [Euclidean algorithm 유클리드호제법](https://github.com/allwhite423/Algorithm/tree/master/Number%20Theory%20(%EC%A0%95%EC%88%98%EB%A1%A0)#euclidean-algorithm-%EC%9C%A0%ED%81%B4%EB%A6%AC%EB%93%9C%ED%98%B8%EC%A0%9C%EB%B2%95)
+- [소수 관련 알고리즘](https://github.com/allwhite423/Algorithm/tree/master/Number%20Theory%20(%EC%A0%95%EC%88%98%EB%A1%A0)#%EC%86%8C%EC%88%98%EA%B4%80%EB%A0%A8-%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
 
 ### Euclidean algorithm 유클리드호제법

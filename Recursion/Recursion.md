@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+[chrome plugin for rendering MathJax for github](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima/related)
 
 ## Recursion 재귀
 
@@ -61,8 +61,8 @@ int main() {
 - 예제 1) $n^{m}$을 재귀함수를 이용하여 계산하기
 	- ***getPower(n, m)*** : $n^{m}$을 반환하는 함수
 $$getPower(n, m) 
-=\begin{cases} 1,  
-& \text{if $m$ equal 0 (기저조건)} \\
+=\begin{cases} 
+1,  & \text{if $m$ equal 0 (기저조건)} \\
 getPower(n, m-1) \times n, & \text{if $n^{m-1}$ is true(ok)}
 \end{cases} $$
 

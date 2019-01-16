@@ -1,4 +1,6 @@
-﻿## Recursion 재귀
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
+## Recursion 재귀
 
 ### 귀납적 계산법
 구하는 값을 $f(x)$ 라고 할 때, 

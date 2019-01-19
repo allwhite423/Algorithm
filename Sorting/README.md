@@ -2,6 +2,13 @@
 - [Selection Sort](#selection-sort)
 - [Insertion Sort](#insertion-sort)
 - [Bubble Sort](#bubble-sort)
+- [Merge Sort](#merge-sort)
+- [Quick Sort](#quick-sort)
+
+## Time Complexity
+|$O(n)$| **Selection, Bubble, Insertion** |
+|--|--|
+|$O(n^{2})$  | **Merge, Quick***  |
 
 ## Selection Sort 
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)
@@ -134,3 +141,87 @@ void BubbleSort::execute() {
     }
 }
 ```
+
+## Merge Sort
+주어진 list를 2개로 계속해서 나눈다.
+나누어진 list가 충분히 작으면 merge 한다.
+merge하면서 순서대로 함
+
+- recursion으로 구현 가능
+- base condition(기저조건) : list가 충분히 작을 때 
+- == list 요소가 한개이거나 두개일 때
+- 같은 크기의 leftList, rightList 로 나눈 후, 각 list에 대해 mergeSort를 호출
+- 그 결과를 ***merge()*** 함수로 합친다.
+- 합칠 때, 순서대로 정렬됨
+
+- ***mergeSort(list, start, end)***
+```c++
+# include <stdio.h>
+# define MAX_SIZE 8
+int tempList[MAX_SIZE]; // 추가적인 공간이 필요
+
+void merge(int list[], int start, int mid, int end) {
+
+int x = start, y = mid+1; // left list index, right list index
+int z = s; //index for tempList
+int z = start;
+
+while(x <= mid && y <= end) {
+if(list[x] < list[y]) {
+tempList[z++] = list[x++];
+} else {
+tempList[z++] = list[y++];
+}
+}
+
+while(x <= mid) {
+tempList[z++] = list[x++];
+}
+
+while(y <= end) {
+tempList[z++] = list[y++];
+}
+
+for(int i = start; i <= end; i++) {
+list[i] = tempList[i];
+} 
+}
+
+void mergeSort(int list[], int start, int end) {
+int mid;
+if(start < end) {
+mid = (end + start) / 2;
+mergeSort(list, start, mid);
+mergeSort(list, mid+1, end);
+merge(list, start, mid, end);
+}
+}
+
+
+int main() {
+int i;
+int n = MAX_SIZE;
+int list[n] = {21, 10, 12, 20, 25, 13, 15, 22};
+
+// 합병 정렬 수행(left: 배열의 시작 = 0, right: 배열의 끝 = 7)
+mergeSort(list, 0, n-1);
+
+// 정렬 결과 출력
+for(i=0; i<n; i++){
+printf("%d ", list[i]);
+}
+
+return 0;
+
+}
+
+```
+## Quick Sort
+pivot의 위치를 반복해서 구하여 전체 list를 정렬하는 방법
+pivot(기준 값)을 기준으로 왼쪽은 작은 값, 오른쪽은 큰 값이 되도록 이동.
+왼쪽, 오른쪽 리스트 각각에 대해 다시 quick sort 수행.
+
+- base condition : list의 요소가 1개일 때
+- 
+
+>[sort참조](https://gmlwjd9405.github.io/2018/05/10/algorithm-quick-sort.html)

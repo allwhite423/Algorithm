@@ -6,9 +6,9 @@
 - [Quick Sort](#quick-sort)
 
 ## Time Complexity
-|$O(n)$| **Selection, Bubble, Insertion** |
+|$O(n^{2})$| **Selection, Bubble, Insertion** |
 |--|--|
-|$O(n^{2})$  | **Merge, Quick***  |
+|$O(n)$  | **Merge, Quick**  |
 
 ## Selection Sort 
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)

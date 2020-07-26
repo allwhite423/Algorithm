@@ -26,6 +26,21 @@
 - ***j*** : min/max를 찾을 대상 list 
 	- ***i ~ n-1*** (자기 자신 포함 해야 함!!)
 
+```swift
+func insertionSortNoMoreSwaps(_ array: [Int]) -> [Int] {
+    var a = array
+    for i in 1..<array.count {
+        let key = a[i]
+        var j = i
+        while (j > 0 && a[j-1] > key) {
+            a[j] = a[j-1]
+            j -= 1
+        }
+        a[j] = key
+    }
+    return a
+}
+```
 
 ```c++
 #include <iostream>

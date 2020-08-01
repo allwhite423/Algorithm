@@ -11,7 +11,6 @@
 |$O(n)$  | **Merge, Quick**  |
 
 ## Selection Sort 
-[problem in Hackerrank](https://www.hackerrank.com/challenges/insertionsort2/problem) / 
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)
 
 <br>
@@ -26,22 +25,6 @@
 	- ***0 ~ n-2*** (n-1은 자동으로 정렬됨. 요소 하나만 남아서)
 - ***j*** : min/max를 찾을 대상 list 
 	- ***i ~ n-1*** (자기 자신 포함 해야 함!!)
-
-```swift
-func insertionSortNoMoreSwaps(_ array: [Int]) -> [Int] {
-    var a = array
-    for i in 1..<array.count {
-        let key = a[i]
-        var j = i
-        while (j > 0 && a[j-1] > key) {
-            a[j] = a[j-1]
-            j -= 1
-        }
-        a[j] = key
-    }
-    return a
-}
-```
 
 ```c++
 #include <iostream>
@@ -105,6 +88,7 @@ int main() {
 
 [C++2](https://github.com/allwhite423/Algorithm/blob/master/Sorting/insertionSort_ver2.cpp)
 
+[problem in Hackerrank](https://www.hackerrank.com/challenges/insertionsort2/problem) 
 
 앞쪽에 정렬된 list에 요소를 삽입(Insert)하는 정렬 방법
 자리를 찾아가는 과정
@@ -113,6 +97,21 @@ int main() {
 	- ***1 ~ n-1*** (맨 앞의 요소는 이미 정렬되었음)
 - ***j*** : 새로 넣을 값과 비교할 정렬된 list element를 가리키는 index
 	- ***i ~ 0*** (거꾸로 비교해 나감) 
+```swift
+func insertionSortNoMoreSwaps(_ array: [Int]) -> [Int] {
+    var a = array
+    for i in 1..<array.count {
+        let key = a[i]
+        var j = i
+        while (j > 0 && a[j-1] > key) {
+            a[j] = a[j-1]
+            j -= 1
+        }
+        a[j] = key
+    }
+    return a
+}
+```
 
 ```c++
 //execute 함수만 구현 

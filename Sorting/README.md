@@ -5,13 +5,13 @@
 - [Merge Sort](#merge-sort)
 - [Quick Sort](#quick-sort)
 
-## Time Complexity
+## Time Complexity (수정 필요)
 |$O(n^{2})$| **Selection, Bubble, Insertion** |
 |--|--|
 |$O(n)$  | **Merge, Quick**  |
 
 ## Selection Sort 
-[problem in Hackerrank](https://www.hackerrank.com/challenges/insertionsort2/problem)
+[problem in Hackerrank](https://www.hackerrank.com/challenges/insertionsort2/problem) &nbsp
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)
 
 <br>

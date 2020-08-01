@@ -11,7 +11,7 @@
 |$O(n)$  | **Merge, Quick**  |
 
 ## Selection Sort 
-[problem in Hackerrank](https://www.hackerrank.com/challenges/insertionsort2/problem) &nbsp
+[problem in Hackerrank](https://www.hackerrank.com/challenges/insertionsort2/problem) / 
 [C++](https://github.com/allwhite423/Algorithm/blob/master/Sorting/selectionSort.cpp)
 
 <br>
